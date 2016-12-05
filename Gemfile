@@ -46,7 +46,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'nokogiri'
-gem 'mysql2'
+gem 'pg', '~> 0.18'
 gem 'haml'
 gem "highcharts-rails"
 gem 'whenever', :require => false

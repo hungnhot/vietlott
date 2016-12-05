@@ -1,13 +1,13 @@
 
 default: &default
-  adapter: mysql2
-  encoding: utf8
+  adapter: postgresql
+  encoding: unicode
   reconnect: false
   database: vietlott
   pool: 5
   timeout: 5000
-  username: 'root'
-  password: 'root'
+  username: postgres
+  password: postgres
   host:     'localhost'
 
 development:

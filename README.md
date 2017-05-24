@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Website to synthesize result of Vietlott :)
 
-Things you may want to cover:
+Get data:
+  heroku run:detached rake get_data --app vietlott-result
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Show logs:
+  heroku logs --app vietlott-result

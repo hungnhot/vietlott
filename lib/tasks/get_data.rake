@@ -1,6 +1,7 @@
 task :get_data => :environment do
   page = Nokogiri::HTML(open("http://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/mega-6-45/winning-numbers/"))
-  num_page = page.css('div.result ul.pagination li').length - 2
+  num_date = page.css('div.form-group select#drawDate option').length - 1
+  num_page = num_date % 20 == 0 ? num_date/20 : num_date/20 + 1
 
   num_page.downto(1) do |i|
     sub_page = Nokogiri::HTML(open("http://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/mega-6-45/winning-numbers/?p=#{i}"))

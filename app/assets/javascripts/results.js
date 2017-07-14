@@ -11,7 +11,7 @@ jQuery(function ($) {
           type: 'column'
         },
         title: {
-          text: 'Vietlott'
+          text: 'Vietlott result'
         },
         xAxis: {
           type: 'category'

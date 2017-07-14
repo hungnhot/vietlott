@@ -1,1 +1,18 @@
 #chart-vietlott
+
+.panel.panel-primary#recently-result
+  .panel-heading
+    %b Recently result
+  .panel-body
+    %table.table.table-striped
+      %thead
+        %tr
+          %th No.
+          %th Date
+          %th Result
+      %tbody
+      -@recently_results.each_with_index do |row, index|
+        %tr.table-success
+          %th= index + 1
+          %th= row.date
+          %th= row.result

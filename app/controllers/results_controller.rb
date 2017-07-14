@@ -1,7 +1,8 @@
 class ResultsController < ApplicationController
 
   def index
-
+    @result = Result.new
+    @recently_results = @result.get_recently_result(limit: 5)
   end
 
   def get_result
